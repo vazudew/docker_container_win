@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <style>
+    div.static {
+      width: 500px;
+      left: 400px;
+      top: 100px;
+      position: absolute;
+      border: 3px solid #6A5621;
+    }
+    </style>
+
+<h1>Hello World - CITIES</h1>
+<p><a href="index.html">HOME</a></p>
+
+<h2 style="color:green;"> Display Cities of a Country </h2>
+<!-- Display cities -->
+<form id="getCityFromWorld">
+  <br>
+  Select a Country &nbsp;&nbsp;
+  <select name="country" id="country">
+      <option value="india">India</option>
+      <option value="pakistan">Pakistan</option>
+      <option value="germany">Germany</option>
+  </select>
+    <br>
+    <br>
+    <input type="submit" value="Submit", id ="submitButton">
+</form> 
+
+<div id="demo" name ="demo"></div>
+<div class = "static" id="result" name ="result"></div>
+<br>
+<br>
+
+<h2 style="color:blueviolet;"> Add a City entry to a Country </h2>
+<!-- Add an Entry -->
+<form id="addCity">
+  <br>
+  Select a Country &nbsp;&nbsp;
+  <select name="countryList" id="countryList">
+      <option value="india">India</option>
+      <option value="pakistan">Pakistan</option>
+      <option value="germany">Germany</option>
+  </select>
+    <br>
+  Add a City &nbsp; &nbsp;
+  <input type = "text"  id="cityEntry">
+  <br>
+    <input type="submit" value="Add"  id ="addButton">
+</form> 
+<br>
+<br>
+
+<h2 style="color:red;">  Delete a City  entry from a Country </h2>
+<!-- Delete an Entry -->
+<form id="deleteCity">
+  <br>
+  Select a Country &nbsp;&nbsp;
+  <select name="countryLi" id="countryLi">
+      <option value="india">India</option>
+      <option value="pakistan">Pakistan</option>
+      <option value="germany">Germany</option>
+  </select>
+    <br>
+  Add a City &nbsp; &nbsp;
+  <input type = "text"  id="cityEntryDel">
+  <br>
+    <input type="submit" value="Delete"  id ="deleteButton">
+</form> 
+
+
+<script src="js/jquery-3.1.0.js"></script>
+<script src="js/formevent.js"></script>
+</body>
+</html>
